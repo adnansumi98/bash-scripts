@@ -10,6 +10,10 @@ yay -S --rebuildall $(pacman -Qmq)
 # list foder size
 du -ah --max-depth 1
 
+# List and sort the folders
+du -ah --max-depth 1 | sort -hr|less
+
+
 # make terminus font on tty
 edit this file 
 /etc/default/console-setup
