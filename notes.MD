@@ -24,3 +24,8 @@ FONTFACE="Terminus"
 FONTSIZE="28x14"
 for instant result 
 setfont /usr/share/consolefonts/Lat7-Terminus28x14.psf
+
+# reset pacman if struck 
+sudo pacman-key --init
+sudo pacman-key --populate archlinux
+sudo pacman -Syyu
